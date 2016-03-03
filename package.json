@@ -1,0 +1,28 @@
+{
+  "name": "Ink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BarenAlen/Ink"
+  },
+  "author": "BarenAlen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarenAlen/Ink/issues"
+  },
+  "homepage": "https://github.com/BarenAlen/Ink",
+  "devDependencies": {
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "gulp-less": "^3.0.5",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-autoprefixer": "^3.1.0",
+    "del": "^2.2.0",
+    "browser-sync": "^2.11.1"
+  }
+}
