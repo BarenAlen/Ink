@@ -1,0 +1,38 @@
+.hook {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	text-align: center;
+	outline: 1px solid red;
+
+	&__text {
+		margin: 0;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 28px;
+
+		&:first-child {
+			margin-bottom: 20px;
+		}
+	}
+
+	@media screen and (min-width: 700px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__text {
+			font-size: 40px;
+			line-height: 48px;
+			&:first-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding-top: 70px;
+		padding-bottom: 80px;
+		&__text {
+			font-size: 50px;
+			line-height: 60px;
+		}
+	}
+}
