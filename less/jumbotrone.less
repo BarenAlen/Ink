@@ -1,0 +1,80 @@
+.jumbotrone {
+	background-image: url('../img/jumbotrone-bg-mobile-1@1x.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 700px 488px;
+	padding-top: 80px;
+
+	@media (min-resolution: 1.5dppx) {
+		background-image: url('../img/jumbotrone-bg-mobile-1@2x.jpg');
+	}
+
+	&__moto {
+		font-size: 24px;
+ 		font-weight: 300;
+ 		text-align: center;
+ 		color: #fff;
+ 		margin: 0;
+		margin-bottom: 25px;
+	}
+
+	&__img-wrap {
+		margin-left: -60px;
+	}
+
+	&__img {
+		display: block;
+		margin: 0 auto;
+	}
+	
+
+	@media screen and (min-width: 700px) {
+		background-image: url('../img/iphone-hand-2@1x.png'), url('../img/jumbotrone-bg-tablet-1@1x.jpg');
+		background-size: 700px 545px, 1200px 729px;
+		background-repeat: no-repeat, no-repeat;
+		background-position: bottom right, center -10px;
+		padding-top: 193px;
+		padding-bottom: 115px;
+
+		@media (min-resolution: 1.5dppx) {
+			background-image: url('../img/iphone-hand-2@2x.png'), url('../img/jumbotrone-bg-tablet-1@2x.jpg');
+		}
+
+		&__container {
+			padding: 0 6.25%;
+			max-width: 960px;
+			margin: 0 auto;	
+		}
+
+		&__column {
+			width: 50%;
+		}
+
+		&__moto {
+			font-size: 40px;
+			line-height: 47px;
+			padding: 0 50px;
+			margin-bottom: 32px;
+		}
+
+		&__img {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 215px;
+		padding-bottom: 121px;
+		background-image: url('../img/iphone-hand-3@1x.png'), url('../img/jumbotrone-bg-fullsize.jpg');
+		background-size: 1050px 645px, cover;
+		background-position: bottom right, center top;
+		@media (min-resolution: 1.5dppx) {
+			background-image: url('../img/iphone-hand-3@2x.png'), url('../img/jumbotrone-bg-fullsize.jpg');
+		}
+		&__moto {
+			font-size: 50px;
+			line-height: 60px;
+			margin-bottom: 51px;
+		}
+	}
+}
