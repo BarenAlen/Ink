@@ -1,0 +1,136 @@
+.info {
+	padding-top: 40px;
+	padding-bottom: 37px;
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	} 
+	&--triangle {
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			height: 33px;
+			position: absolute;
+			bottom: -33px;
+			left: 0;
+			right: 0;
+			background-color: transparent;
+			background-image: linear-gradient(to right bottom, #fff 50%, transparent 51%),
+			                  linear-gradient(to left bottom, #fff 50%, transparent 51%);
+			background-repeat: no-repeat;
+			background-size: 50.2% 100%;
+			background-position: top right, top left;
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		font-weight: 300;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	&__sub-title {
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		margin: 0;
+	}
+
+	&__tel-number,
+	&__email,
+	&__address {
+		display: block;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 28px;
+		text-align: center;
+		color: #d22856;
+		margin: 0;
+		text-decoration: none;
+	}
+	
+	&__tel-wrap {
+		margin-bottom: 20px;
+	}
+
+	&__email-wrap {
+		margin-bottom: 20px;
+	}
+
+	&__address-wrap	 {
+	}
+
+	@media screen and (min-width: 700px) {
+		padding-top: 44px;
+		padding-bottom: 25px;
+		&--triangle {
+			&::before {
+				height: 72px;
+				bottom: -72px;
+			}
+		}
+
+		&__title {
+			font-size: 40px;
+			margin-bottom: 40px;
+		}
+
+		&__sub-title {
+			margin-bottom: 4px;
+		}
+
+		&__tel-wrap {
+			width: 42.85714285714286%;
+			float: left;
+			margin-bottom: 47px;
+		}
+		&__email-wrap {
+			width: 42.85714285714286%;
+			float: right;
+			margin-bottom: 47px;
+		}
+		&__address-wrap	{
+			width: 100%;
+			float: left;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 58px;
+		padding-bottom: 0;
+		&--triangle {
+			&::before {
+				height: 122px;
+				bottom: -122px;
+			}
+		}
+
+		&__tel-wrap {
+			width: 33.297872%;
+			float: left;
+			margin-bottom: 0;
+		}
+		&__email-wrap {
+			width: 33.297872%;
+			float: right;
+			margin-bottom: 0;
+		}
+		&__address-wrap	{
+			width: 33.297872%;
+			float: left;
+		}
+	
+		&__title {
+			font-size: 50px;
+			margin-bottom: 53px;
+		}
+
+		&__sub-title {
+			margin-bottom: 24px;
+		}
+	}
+}
