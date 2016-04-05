@@ -1,0 +1,112 @@
+.page-header {
+	font-family: 'Open Sans', sans-serif;
+	background: rgba(0,0,0,.5);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+
+	&__logo-wrap {
+	 	width: 25%;
+	 	display: inline-block;
+	 	vertical-align: bottom;
+	}
+
+	&__nav-wrap {
+		width: 75%;
+		display: inline-block;
+		text-align: right;
+	}
+
+	@media screen and (min-width: 700px) {
+		padding-bottom: 35px;
+		padding-top: 25px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		&__nav-wrap {
+			text-align: left;
+		}
+	}
+}
+
+.logo {
+	fill: #fff;
+
+	&--footer {
+			fill: @dark-blue;
+		}
+
+	&__swg-wrapper {
+		width: 74.318px;
+		height: 23.041px;
+	}
+
+	
+	&__pic {
+		display: none;
+
+		&--full {
+			fill: @pink;
+		}
+
+		&--show-xs {
+			display: block;
+		}
+	}
+
+	&:hover &__pic {
+		cursor: pointer;
+		fill: #d22856;
+
+		&--full {
+			animation-name: blink;
+			animation-duration: .8s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+	}
+
+	&:active &__pic {
+		fill: #fff;
+		fill-opacity: .4;
+		animation: none;
+	}
+
+	@media screen and (min-width: 700px) {
+		&__swg-wrapper {
+			width: 146.3px;
+			height: 41.375px;
+		}
+
+		&__pic {
+			&--hide-sm {
+				display: none;
+			}
+
+			&--show-sm {
+				display: block;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		&__pic {
+			&--hide-md {
+				display: none;
+			}
+
+			&--show-md {
+				display: block;
+			}
+		}
+	}
+}
+
+@keyframes blink {
+	0%, 20% {fill: #fff;}
+	30%, 80% {fill: #d22856;}
+	90%, 100% {fill: #d22856;}
+}
