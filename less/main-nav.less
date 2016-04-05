@@ -1,0 +1,140 @@
+.main-nav {
+	&__menu {
+		position: absolute;
+		right: -7.1%;
+		left: -7.1%;
+		top: 64px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		display: none;
+		li {
+			font-size: 18px;
+			line-height: 32px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		a {
+			display: block;
+			background: #283645;
+			text-decoration: none;
+			color: rgba(255, 255, 255, 1);
+			padding: 15px 0;
+			border-bottom: 1px solid #000;
+			border-top: 1px solid #485460;
+			&:hover {
+				color: @pink;
+			}
+			&:active {
+				color: fadeout(@pink, 50%);
+			}
+		}
+		&--opened {
+			display: block;
+			animation-name: fadein;
+			animation-duration: 1s;
+		}
+	}
+
+	
+	@media screen and (min-width:700px) {
+		&__menu {
+			top: 101px;
+		}
+	}
+	@media screen and (min-width: 1024px) {
+		&__menu {
+			position: static;
+			display: block;
+			text-align: right;
+			li {
+				display: inline-block;
+				vertical-align: bottom;
+				font-size: 18px;
+				line-height: 18px;
+				margin: 0 34px;
+				margin-bottom: -8px;
+				text-transform: capitalize;
+				font-weight: normal;
+
+				&:last-child {
+					margin-right: 0;
+				} 	
+			}
+			a {
+				padding-bottom: 8px;
+				padding-top: 10px;				
+				background: none;
+				border: none;
+				transition: .4s;
+				border-bottom: 2px solid transparent;
+				cursor: pointer;
+
+				&:hover {
+					border-bottom: 2px solid #fff;
+					color: #fff;
+				}
+
+				&:active {
+					color: rgba(255, 255, 255, .5);
+					border-bottom-color: transparent;
+				}
+			}
+		}
+		&__link-active {
+			a {
+				color: rgba(255, 255, 255, .5);
+			}
+		}
+
+		&__toggle {
+			display: none;
+		}
+	}
+}
+
+.nav-toggle {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 24px;
+	font-size: 0;
+	text-decoration: none;
+	span.burger {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 50px;
+		height: 4px;
+		background-color: #fff;
+		span {
+			display: block;
+			width: 50px;
+			height: 4px;
+			background-color: #fff;
+			position: absolute;
+			&:first-child {
+				top: 10px;
+			}
+			&:last-child {
+				top: -10px;
+			}
+		}
+	}
+	&:hover {
+		cursor: pointer;
+		 span, span > span {
+			background-color: @pink;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		display: none;
+	}
+}
+
+@keyframes  fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
