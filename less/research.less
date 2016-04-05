@@ -1,0 +1,86 @@
+.research {
+	display: none;
+	background-color: #fff;
+	margin-bottom: 20px;
+	
+	&__title {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: bold;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 24px;
+		margin: 0;
+		margin-bottom: 8px;
+	}
+
+	&__read-more {
+		font-size: 14px;
+		line-height: 24px;
+		color: #d22856;
+	}
+
+	@media screen and (min-width: 700px) {
+		display: block;
+		padding-top: 57px;
+		&__text-wrap {
+			float: left;
+			width: 50%;
+			padding-top: 40px;
+		}
+		
+		&__title {
+			padding-right: 50%;
+		}
+
+		&__img-wrap {
+			float: left;
+			width: 50%;
+		}
+
+		&__img {
+			display: block;
+			width: 260.644px;
+			height: 301.835px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		background: @light-grey;
+		padding-top: 65px;
+		padding-bottom: 65px;
+		margin-bottom: 0;
+		&__text-wrap {
+			width: 62%;
+			padding-top: 95px;
+		}
+		
+		&__title {
+			padding-right: 0;
+			margin-bottom: 23px;
+		}
+
+		&__text {
+			font-size: 18px;
+			margin-bottom: 35px;
+		}
+
+		&__read-more {
+			font-size: 18px;
+		}
+
+		&__img-wrap {
+			width: 38%;
+		}
+
+		&__img {
+			width: 298.001px;
+			height: 345.097px;
+			margin: 0;
+		}
+	}
+}
