@@ -5,174 +5,280 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/style.css">
-	<title>P - ink</title>
-	<style>
-		table {
-			text-align: center;
-		}
-	</style>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic-ext' rel='stylesheet'>
+	<title>Ink</title>
 </head>
 <body>
 	<header class="page-header">
-		<div class="page-header__top">
-			<div class="page-header__container">
-				<div class="page-header__logo-wrap">
-					<a href="index.html" class="page-header__logo-link">
-						<img src="img/logo.png" alt="PINK">
-					</a>
-				</div>
-				<div class="page-header__nav">
-					<nav class="main-nav">
-						<ul class="main-nav__list">
-							<li><a href="#">Информация</a></li>
-							<li><a href="#">Возможности</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Стоимость</a></li>
-						</ul>
-					</nav>
-				</div>
+		<div class="page-header__container  clearfix" style="font-size: 0;">
+			<div class="page-header__logo-wrap">
+				<a href="index.html" class="logo">
+	 				<svg class="logo__swg-wrapper">
+						<svg class="logo__pic  logo__pic--show-xs  logo__pic--hide-sm ">
+							<use xlink:href="img/pink-logo.svg#logo-mobile"></use>
+						</svg>
+						<svg class="logo__pic  logo__pic--show-sm  logo__pic--hide-md">
+							<use xlink:href="img/pink-logo.svg#logo-tablet-header"></use>
+						</svg>
+						<svg class="logo__pic logo__pic--full  logo__pic--show-md">
+							<use xlink:href="img/pink-logo.svg#logo-full-header"></use>
+						</svg>
+					</svg>
+				</a>
 			</div>
-		</div>
-		<div class="jumbotrone">
-			<div class="jumbotrone__container">
-				<p class="jumbotrone__moto">Взгляните на жизнь иначе!</p>
-				<a href="#" class="jumbotrone__btn">Скачать приложение</a>
-				<div class="supported-devices">
-					<div class="supported-devices__images">
-						<object type="image/svg+xml" data="img/apple-logo.svg">Your browser does not support SVGs</object>
-						<object type="image/svg+xml" data="img/android-logo.svg">Your browser does not support SVGs</object>
-						<object type="image/svg+xml" data="img/microsoft-logo.svg">Your browser does not support SVGs</object>
-					</div>
-					<p class="supported-devices__text">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
-				</div>
+			<div class="page-header__nav-wrap">
+				<a class="nav-toggle" id="nav-toggle" title="Меню">
+					<span class="burger" id="burger">
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				<nav class="main-nav">
+					<ul class="main-nav__menu" id="nav-menu">
+						<li class="main-nav__link-active"><a href="#" class="active">Информация</a></li>
+						<li><a href="#">Возможности</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Стоимость</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</header>
 
-	<div class="page-content  page-content--75%-gradient">
-		<div class="page-content__container">
+	<div class="jumbotrone">
+		<div class="jumbotrone__container  clearfix">
+			<div class="jumbotrone__column">
+				<p class="jumbotrone__moto">Взгляните на&nbsp;жизнь<br>иначе!</p>
+				<div class="jumbotrone__img-wrap">
+					<img class="jumbotrone__img" width="258" src="img/iphone-hand-1@1x.png" 
+					srcset="img/iphone-hand-1@2x.png 2x, img/iphone-hand-1@3x.png 3x">
+				</div>
+				<div class="download">
+					<a href="table.html" class="download__btn">Скачать&nbsp;приложение</a>
+					<div class="supported-devices">
+						<object class="supported-devices__pic" type="image/svg+xml" data="img/apple-logo.svg">Your browser does not support SVGs</object>&nbsp;
+						<object class="supported-devices__pic" type="image/svg+xml" data="img/android-logo.svg">Your browser does not support SVGs</object>
+						<object class="supported-devices__pic" type="image/svg+xml" data="img/microsoft-logo.svg">Your browser does not support SVGs</object>
+						<p class="supported-devices__text">Доступно для iPhone, iPad, Android,<br>Windows phone, Mac OS, Windows 8</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="page-content">
 
-			<div class="promo">
-				<p class="promo__hook">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-				<div class="promo__features__list">
-					<div class="promo__feature">
-						<img src="#" class="promo__img">
+		<div class="hook">
+			<div class="page-content__container">
+				<p class="hook__text">Устали от серости мегаполиса?</p>
+				<p class="hook__text">Нам есть, что вам<br>предложить!</p>
+			</div>
+		</div>
+
+		<div class="promo">
+			<div class="page-content__container  clearfix">
+				<div class="promo__img-wrap">
+					<img width="268" src="img/promo-iphone-tablet-1@1x.png" srcset="img/promo-iphone-tablet-1@2x.png 2x" alt="">
+				</div>
+				<div class="promo__feature-wrap  clearfix">
+					<div class="promo__feature  promo__feature--item-1">
 						<p class="promo__title">Поднимает настроение</p>
 						<p class="promo__text">Приложение пзволит вам победить осеннюю хандру и депрессию буквально в несколько кликов.</p>
 					</div>
-					<div class="promo__feature">
-						<img src="#" class="promo__img">
+					<div class="promo__feature  promo__feature--item-2">
 						<p class="promo__title">Меняет мир вокруг</p>
 						<p class="promo__text">Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы услить эффект.</p>
 					</div>
-					<div class="promo__feature">
-						<img src="#" class="promo__img">
+					<div class="promo__feature  promo__feature--item-3">
 						<p class="promo__title">Заводит новых друзей</p>
 						<p class="promo__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых.</p>
 					</div>
 				</div>
-				<div class="promo__main-feature">
-					<p class="promo__title">Эффект на 24 часа!</p>
-					<p class="promo__text">Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-					<a href="#" class="promo__read-more">Узнать больше об исследовании</a>
-				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="page-content  page-content--half-gradient">
+		<div class="research">
+			<div class="page-content__container  clearfix">
+					<div class="research__img-wrap">
+						<object class="research__img" data="img/research-timer.svg" type="image/svg+xml"></object>
+					</div>
+					<div class="research__text-wrap">
+						<p class="research__title">Эффект на&nbsp;24&nbsp;часа!</p>
+						<p class="research__text">Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+						<a href="#" class="research__read-more">Узнать больше об исследовании</a>
+					</div>
+			</div>
+		</div>
+
 		<div class="page-content__container">
 
 			<div class="reviews-slider">
-				<span>&ldquo;</span>
-				<p class="reviews-slider__text">Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях под вылоенной фотографией.</p>
-				<p class="reviews-slider__reviewer">Николай Петров</p>
-				<p class="reviews-slider__about-reviewer">25 лет, водитель трамвая</p>
+				<div class="reviews-slider__slide">
+					<p class="reviews-slider__reviewer">Николай Петров</p>
+					<p class="reviews-slider__quote">&laquo;Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+					<p class="reviews-slider__about-reviewer">25 лет, водитель трамвая</p>
+				</div>
 				<button class="reviews-slider__btn-prev"><</button>
 				<button class="reviews-slider__btn-next">></button>
-				<div class="reviews-slider__btn-container" style="display: none;">
-					<button class="reviews-slider__m-btn">.</button>
-					<button class="reviews-slider__m-btn">.</button>
-					<button class="reviews-slider__m-btn">.</button>
+				<div class="reviews-slider__slider-controls">
+					<span class="reviews-slider__slider-btn  reviews-slider__slider-btn--active"></span>
+					<span class="reviews-slider__slider-btn"></span>
+					<span class="reviews-slider__slider-btn"></span>
 				</div>
 			</div>
 
-			<div class="price-list">
-				<table class="price-list__table"  border="1" style="width:100%">
-					<tr>
+		</div>
+
+		<div class="price-list">
+			<div class="page-content__container">
+				<table class="price-list__table">
+				
+					<tr class="price-list__col-0">
 						<th></th>
-						<th>База<br>1,99 USD</th>
-						<th>Стандарт<br>3,99 USD</th>
-						<th>Анлим<br>9,99 USD</th>
+						<th class="border">
+							<p class="price-list__option">БАЗА<br>
+								<span class="price-list__price">1,99 USD</span>
+							</p>
+						</th>
+						<th class="border">
+							<p class="price-list__option">СТАНДАРТ<br>
+								<span class="price-list__price">1,99 USD</span>
+							</p>
+						</th>
+						<th>
+							<p class="price-list__option">АНЛИМ<br>
+								<span class="price-list__price">1,99 USD</span>
+							</p>
+						</th>
 					</tr>
-					<tr>
-						<td>Розовый фильтр</td>
-						<td>&forall;</td>
-						<td>&forall;</td>
-						<td>&forall;</td>
+				
+					<tr class="price-list__col-1">
+						<td class="price-list__feature-cell"><p class="price-list__feature-name">Розовый&nbsp;фильтр</p></td>
+						<td >
+							<p class="price-list__feature-name">Розовый фильтр</p>
+							<img src="img/yes.svg" alt="YES" class="price-list__status-img">
+						</td>
+						<td>
+							<p class="price-list__feature-name">Розовый фильтр</p>
+							<img src="img/no.svg" alt="NO" class="price-list__status-img">
+						</td>
+						<td>
+							<p class="price-list__feature-name">Розовый фильтр</p>
+							<img src="img/no.svg" alt="NO" class="price-list__status-img"></td>
 					</tr>
-					<tr>
-						<td>Смайлики</td>
-						<td>&dagger;</td>
-						<td>&forall;</td>
-						<td>&forall;</td>
+				
+					<tr class="price-list__col-2">
+						<td class="price-list__feature-cell"><p class="price-list__feature-name">Смайлики</p></td>
+						<td>
+							<p class="price-list__feature-name">Смайлики</p>
+							<img src="img/yes.svg" alt="YES" class="price-list__status-img">
+						</td>
+						<td>
+							<p class="price-list__feature-name">Смайлики</p>
+							<img src="img/no.svg" alt="NO" class="price-list__status-img">
+						</td>
+						<td>
+							<p class="price-list__feature-name">Смайлики</p>
+							<img src="img/no.svg" alt="NO" class="price-list__status-img">
+						</td>
 					</tr>
-					<tr>
-						<td>Комментарии</td>
-						<td>&dagger;</td>
-						<td>&dagger;</td>
-						<td>&forall;</td>
+				
+					<tr class="price-list__col-3">
+						<td class="price-list__feature-cell"><p class="price-list__feature-name">Комментарии</p></td>
+						<td>
+							<p class="price-list__feature-name">Комментарии</p>
+							<img src="img/yes.svg" alt="YES" class="price-list__status-img">
+						</td>
+						<td>
+							<p class="price-list__feature-name">Комментарии</p>
+							<img src="img/yes.svg" alt="YES" class="price-list__status-img">
+						</td>
+						<td>
+							<p class="price-list__feature-name">Комментарии</p>
+							<img src="img/no.svg" alt="NO" class="price-list__status-img">
+						</td>
 					</tr>
+				
 				</table>
-				<div class="price-list__btn-container" style="display: none;" >
-					<button class="price-list__m-btn">.</button>
-					<button class="price-list__m-btn">.</button>
-					<button class="price-list__m-btn">.</button>
-				</div>
+			</div>
+
+			<div class="price-list__slider-controls">
+				<span class="price-list__slider-btn  price-list__slider-btn--active"></span>
+				<span class="price-list__slider-btn"></span>
+				<span class="price-list__slider-btn"></span>
 			</div>
 
 		</div>
-	</div>
+
 	
-	<div class="info">
-		<div class="info__map">
-			<div class="info__contacts">
-				<div class="info__container">
-					<p class="info__title">Остались вопросы?<br>Свяжитесь с нами!</p>
-					<div class="info__col-left">
-						<p class="info__sub-title">Звоните:</p>
-						<span class="info__tel">8 (800) 1000 900</span>
-					</div>
-					<div class="info__col-middle">
-						<p class="info__sub-title">Приезжайте в гости:</p>
-						<span class="info__address">Санкт-Петербург,<br>Невский проспект, д.20</span>
-					</div>
-					<div class="info__col-right">
-						<p class="info__sub-title">Пишите:</p>
-						<span class="info__email">hello@pinkapp.ru</span>
-					</div>
+
+		<div class="info  info--triangle">
+			<div class="page-content__container">
+				<p class="info__title">Остались вопросы?<br>Свяжитесь с нами!</p>
+				<div class="info__tel-wrap">
+					<p class="info__sub-title">Звоните:</p>
+					<a class="info__tel-number" href="tel:88001000900" >8 (800) 1000 900</a>
+				</div>
+				<div class="info__email-wrap">
+					<p class="info__sub-title">Пишите:</p>
+					<a href="mailto:hello@pinkapp.ru" class="info__email">hello@pinkapp.ru</a>
+				</div>
+				<div class="info__address-wrap">
+					<p class="info__sub-title">Приезжайте в гости:</p>
+					<p class="info__address">Санкт-Петербург,<br>Невский проспект, д.20</p>
 				</div>
 			</div>
 		</div>
+
+		<div class="map" id="map">
+			MAP
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7461291855088!2d30.31890831570252!3d59.93635466924542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x35cdba9c7f3d2206!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDIwLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1458243661894" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+		</div>
+
 	</div>
 
 	<footer class="page-footer">
-		<div class="page-footer__container">
-			<div class="page-footer__logo">
-				<a href="index.html"><img src="" alt="LOGO"></a>
+		<div class="page-footer__container  clearfix">
+			<div class="page-footer__logo-wrap">
+				<a href="index.html" class="logo  logo--footer">
+					<svg class="logo__swg-wrapper">
+						<svg class="logo__pic logo__pic--show-sm  logo__pic--hide-md">
+							<use xlink:href="img/pink-logo.svg#logo-tablet-footer"></use>
+						</svg>
+						<svg class="logo__pic  logo__pic--show-md">
+							<use xlink:href="img/pink-logo.svg#logo-full-footer"></use>
+						</svg>
+					</svg>
+				</a>
 			</div>
 			<div class="page-footer__social-links">
 				<div class="socal-links">
-					<a href="#"  class="social-links__twitter"></a>
-					<a href="#"  class="social-links__facebook"></a>
-					<a href="#"  class="social-links__play"></a>
+					<a href="#"  class="social-links__twitter"><img src="img/twitter.svg" alt="Наш твиттер"></a>
+					<a href="#"  class="social-links__facebook"><img src="img/facebook.svg" alt="Наша страница на фейсбук"></a>
+					<a href="#"  class="social-links__play"><img src="img/youtube.svg" alt="Наш канал на youtube"></a>
 				</div>
 			</div>
-			<div class="page-footer__design-by">
-				<p class="credits">Website by <span></span> for <span></span></p>
+			<div class="page-footer__info">
+				<p class="about-website">Website by
+					<a href="#" class="about-website__link">
+						<svg class="about-website__logo" width="26.096px" height="33.803px">
+							<use xlink:href="img/other-logos.svg#html-academy-logo"></use>
+						</svg>
+					</a>
+					for
+					<a href="#" class="about-website__link">
+						<svg class="about-website__logo" width="25.988px" height="29.922px">
+							<use xlink:href="img/other-logos.svg#designer-logo"></use>
+						</svg>
+					</a>
+				</p>
 			</div>
 		</div>
 	</footer>
-
+	<script src="js/morpheus.js"></script>
+	<script src="js/svg4everybody.js"></script>
+	<script src="js/main.js"></script>
+	<script>svg4everybody();</script>
 </body>
 </html>
