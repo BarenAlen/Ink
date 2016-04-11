@@ -1,12 +1,20 @@
 .page-header {
 	font-family: 'Open Sans', sans-serif;
 	background: rgba(0,0,0,.5);
+	border-bottom: 1px solid transparent;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
+
+	&--menu-opened {
+		background: @light-blue;
+		border-bottom: 1px solid #000;
+		// animation-name: darken;
+		// animation-duration: 1s;
+	}
 
 	&__logo-wrap {
 	 	width: 25%;
@@ -105,8 +113,7 @@
 	}
 }
 
-@keyframes blink {
-	0%, 20% {fill: #fff;}
-	30%, 80% {fill: #d22856;}
-	90%, 100% {fill: #d22856;}
+@keyframes darken {
+	from {background: rgba(0,0,0,.5);}
+	to {background: @light-blue;}
 }
