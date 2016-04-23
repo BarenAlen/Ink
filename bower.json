@@ -1,0 +1,23 @@
+{
+  "name": "Pink",
+  "version": "1",
+  "homepage": "https://github.com/BarenAlen/Ink",
+  "authors": [
+    "Pavel Lisitsyn <foxfamer@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "respond": "Respond#^1.4.2",
+    "morpheus": "^0.7.2",
+    "svg4everybody": "^2.0.3",
+    "html5shiv": "^3.7.3",
+    "es5-shim": "^4.5.8"
+  }
+}
