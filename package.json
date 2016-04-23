@@ -17,12 +17,15 @@
   },
   "homepage": "https://github.com/BarenAlen/Ink",
   "devDependencies": {
-    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
-    "gulp-less": "^3.0.5",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-debug": "^2.1.2",
-    "gulp-autoprefixer": "^3.1.0",
+    "browser-sync": "^2.11.1",
     "del": "^2.2.0",
-    "browser-sync": "^2.11.1"
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-less": "^3.0.5",
+    "gulp-sourcemaps": "^1.6.0"
   }
 }
