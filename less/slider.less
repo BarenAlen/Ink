@@ -1,0 +1,41 @@
+.indicators {
+	text-align: center;
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		width: 6px;
+		height: 6px;
+		background-color: #b5b9be;
+		border-radius: 6px;
+		margin: 0 5px;
+		border: 3px solid #fff;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	&--grey {
+		span {border: 3px solid @light-grey;}
+	}
+	.active {
+		border: 3px solid @light-blue;
+	}
+}
+
+#pricesSlider {
+	overflow: visible;	
+}
+
+.slider {
+  overflow: hidden; 
+  visibility: hidden;
+  position: relative;
+}
+.slider-wrap {
+  overflow: hidden; 
+  position: relative;
+}
+.slider-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
