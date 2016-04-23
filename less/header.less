@@ -12,8 +12,6 @@
 	&--menu-opened {
 		background: @light-blue;
 		border-bottom: 1px solid #000;
-		// animation-name: darken;
-		// animation-duration: 1s;
 	}
 
 	&__logo-wrap {
@@ -113,7 +111,8 @@
 	}
 }
 
-@keyframes darken {
-	from {background: rgba(0,0,0,.5);}
-	to {background: @light-blue;}
+@keyframes blink {
+	0%, 20% {fill: #fff;}
+	30%, 80% {fill: #d22856;}
+	90%, 100% {fill: #d22856;}
 }
